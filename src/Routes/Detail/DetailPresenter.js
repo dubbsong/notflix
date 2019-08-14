@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Loader from 'Components/Loader';
+import Helmet from 'react-helmet';
 
 const Container = styled.div`
   width: 100%;
@@ -94,9 +95,17 @@ const Overview = styled.p`
 
 const DetailPresenter = ({ loading, result, error }) =>
   loading ? (
-    <Loader />
+    <React.Fragment>
+      <Helmet>
+        <title>Loading | Notflix</title>
+      </Helmet>
+      <Loader />
+    </React.Fragment>
   ) : (
     <Container>
+      <Helmet>
+        <title>{result.title ? result.title : result.name} | Notflix</title>
+      </Helmet>
       <Backdrop
         bgImage={`https://image.tmdb.org/t/p/original${result.backdrop_path}`}
       />

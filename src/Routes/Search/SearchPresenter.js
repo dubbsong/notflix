@@ -7,6 +7,7 @@ import Loader from 'Components/Loader';
 import Section from 'Components/Section';
 import VPoster from 'Components/VPoster';
 import Message from 'Components/Message';
+import Helmet from 'react-helmet';
 
 const Container = styled.div``;
 
@@ -38,6 +39,9 @@ const SearchPresenter = ({
   updateWord
 }) => (
   <Container>
+    <Helmet>
+      <title>Search | Notflix</title>
+    </Helmet>
     <Form onSubmit={handleSubmit}>
       <StyledIcon icon={faSearch} />
       <Input
