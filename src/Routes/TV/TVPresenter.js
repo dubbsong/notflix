@@ -4,6 +4,7 @@ import Loader from 'Components/Loader';
 import TVHeder from 'Components/TVHeader';
 import Section from 'Components/Section';
 import HPoster from 'Components/HPoster';
+import Footer from 'Components/Footer';
 
 const TVPresenter = ({
   loading,
@@ -70,6 +71,7 @@ const TVPresenter = ({
           ))}
         </Section>
       )}
+      <Footer />
     </React.Fragment>
   );
 

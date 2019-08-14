@@ -4,6 +4,7 @@ import Loader from 'Components/Loader';
 import MovieHeader from 'Components/MovieHeader';
 import Section from 'Components/Section';
 import HPoster from 'Components/HPoster';
+import Footer from 'Components/Footer';
 
 const MoviePresenter = ({
   loading,
@@ -74,6 +75,7 @@ const MoviePresenter = ({
           ))}
         </Section>
       )}
+      <Footer />
     </React.Fragment>
   );
 
