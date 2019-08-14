@@ -6,6 +6,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Loader from 'Components/Loader';
 import Section from 'Components/Section';
 import VPoster from 'Components/VPoster';
+import Message from 'Components/Message';
 
 const Container = styled.div``;
 
@@ -76,6 +77,13 @@ const SearchPresenter = ({
             ))}
           </Section>
         )}
+        {error && <Message text={error} color="#e50914" />}
+        {movieResults &&
+          movieResults.length === 0 &&
+          tvResults &&
+          tvResults.length === 0 && (
+            <Message text="Nothing found" color="#e5e5e5" />
+          )}
       </React.Fragment>
     )}
   </Container>

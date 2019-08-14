@@ -5,6 +5,7 @@ import MovieHeader from 'Components/MovieHeader';
 import Section from 'Components/Section';
 import HPoster from 'Components/HPoster';
 import Footer from 'Components/Footer';
+import Message from 'Components/Message';
 
 const MoviePresenter = ({
   loading,
@@ -75,6 +76,7 @@ const MoviePresenter = ({
           ))}
         </Section>
       )}
+      {error && <Message text={error} color="#e50914" />}
       <Footer />
     </React.Fragment>
   );
