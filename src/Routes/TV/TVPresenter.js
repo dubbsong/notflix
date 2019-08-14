@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Loader from 'Components/Loader';
 import TVHeder from 'Components/TVHeader';
+import Section from 'Components/Section';
+import HPoster from 'Components/HPoster';
 
 const TVPresenter = ({
   loading,
@@ -16,6 +18,58 @@ const TVPresenter = ({
   ) : (
     <React.Fragment>
       <TVHeder />
+      {trending && trending.length > 0 && (
+        <Section title="Trending TV Shows">
+          {trending.map(tv => (
+            <HPoster
+              id={tv.id}
+              imageUrl={tv.poster_path}
+              title={tv.name}
+              year={tv.first_air_date}
+              key={tv.id}
+            />
+          ))}
+        </Section>
+      )}
+      {onTheAir && onTheAir.length > 0 && (
+        <Section title="On The Air">
+          {onTheAir.map(tv => (
+            <HPoster
+              id={tv.id}
+              imageUrl={tv.poster_path}
+              title={tv.name}
+              year={tv.first_air_date}
+              key={tv.id}
+            />
+          ))}
+        </Section>
+      )}
+      {popular && popular.length > 0 && (
+        <Section title="Popular">
+          {popular.map(tv => (
+            <HPoster
+              id={tv.id}
+              imageUrl={tv.poster_path}
+              title={tv.name}
+              year={tv.first_air_date}
+              key={tv.id}
+            />
+          ))}
+        </Section>
+      )}
+      {topRated && topRated.length > 0 && (
+        <Section title="Top Rated">
+          {topRated.map(tv => (
+            <HPoster
+              id={tv.id}
+              imageUrl={tv.poster_path}
+              title={tv.name}
+              year={tv.first_air_date}
+              key={tv.id}
+            />
+          ))}
+        </Section>
+      )}
     </React.Fragment>
   );
 
