@@ -18,6 +18,10 @@ const StyledIcon = styled(FontAwesomeIcon)`
   font-size: 20px;
   text-shadow: 5px 5px 20px #000000;
   opacity: 0;
+
+  @media (max-width: 768px) {
+    opacity: 1;
+  }
 `;
 
 const Container = styled.div`
