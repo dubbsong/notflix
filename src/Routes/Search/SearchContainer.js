@@ -12,7 +12,19 @@ export default class extends React.Component {
   };
 
   // Logic
-  handleSubmit = () => {
+  updateWord = event => {
+    const {
+      target: { value }
+    } = event;
+
+    this.setState({
+      searchWord: value
+    });
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+
     if (this.state.searchWord !== '') {
       this.searchByWord();
     }
@@ -48,6 +60,7 @@ export default class extends React.Component {
         tvResults={this.state.tvResults}
         error={this.state.error}
         handleSubmit={this.handleSubmit}
+        updateWord={this.updateWord}
       />
     );
   }
