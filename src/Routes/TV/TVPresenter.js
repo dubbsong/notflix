@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Loader from 'Components/Loader';
+import TVHeder from 'Components/TVHeader';
 
 const TVPresenter = ({
   loading,
@@ -8,7 +10,14 @@ const TVPresenter = ({
   popular,
   topRated,
   error
-}) => 'TV Shows Area';
+}) =>
+  loading ? (
+    <Loader />
+  ) : (
+    <React.Fragment>
+      <TVHeder />
+    </React.Fragment>
+  );
 
 TVPresenter.propTypes = {
   loading: PropTypes.bool.isRequired,

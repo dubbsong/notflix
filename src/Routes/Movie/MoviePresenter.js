@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Loader from 'Components/Loader';
+import MovieHeader from 'Components/MovieHeader';
 
 const MoviePresenter = ({
   loading,
@@ -8,7 +10,14 @@ const MoviePresenter = ({
   topRated,
   upcoming,
   error
-}) => 'Movies Area';
+}) =>
+  loading ? (
+    <Loader />
+  ) : (
+    <React.Fragment>
+      <MovieHeader />
+    </React.Fragment>
+  );
 
 MoviePresenter.propTypes = {
   loading: PropTypes.bool.isRequired,
