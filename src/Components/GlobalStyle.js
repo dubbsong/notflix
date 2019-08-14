@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     background-color: #141414;
     color: #ffffff;
+    padding-top: 70px;
   }
 
   a {

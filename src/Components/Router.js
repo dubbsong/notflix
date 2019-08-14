@@ -5,6 +5,7 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
+import Nav from './Nav';
 import Movie from 'Routes/Movie';
 import TV from 'Routes/TV';
 import Search from 'Routes/Search';
@@ -12,6 +13,7 @@ import Detail from 'Routes/Detail';
 
 export default () => (
   <Router>
+    <Nav />
     <Switch>
       <Route path="/" exact component={Movie} />
       <Route path="/tv" component={TV} />
