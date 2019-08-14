@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import GlobalStyle from './GlobalStyle';
+import Router from './Router';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <h2>오많배</h2>
+        <Router />
+        <GlobalStyle />
       </React.Fragment>
     );
   }

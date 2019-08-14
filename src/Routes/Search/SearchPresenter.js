@@ -1,0 +1,1 @@
+export default () => 'Search Input & Results Area';

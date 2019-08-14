@@ -1,0 +1,1 @@
+export default () => 'Each Detail Area';
