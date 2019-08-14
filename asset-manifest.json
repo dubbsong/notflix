@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/notflix/static/js/main.4d9f0959.chunk.js",
+    "main.js.map": "/notflix/static/js/main.4d9f0959.chunk.js.map",
+    "runtime~main.js": "/notflix/static/js/runtime~main.35d25a23.js",
+    "runtime~main.js.map": "/notflix/static/js/runtime~main.35d25a23.js.map",
+    "static/js/2.8aac0c65.chunk.js": "/notflix/static/js/2.8aac0c65.chunk.js",
+    "static/js/2.8aac0c65.chunk.js.map": "/notflix/static/js/2.8aac0c65.chunk.js.map",
+    "index.html": "/notflix/index.html",
+    "precache-manifest.071eaae6c92cefb56f2be3b36e81a5e5.js": "/notflix/precache-manifest.071eaae6c92cefb56f2be3b36e81a5e5.js",
+    "service-worker.js": "/notflix/service-worker.js",
+    "static/media/bg_movie.webp": "/notflix/static/media/bg_movie.f15e2eda.webp",
+    "static/media/bg_tv.webp": "/notflix/static/media/bg_tv.bd8ecc9b.webp",
+    "static/media/logo.png": "/notflix/static/media/logo.854b40f2.png",
+    "static/media/logo_sm.png": "/notflix/static/media/logo_sm.41b45fdc.png",
+    "static/media/omb.png": "/notflix/static/media/omb.a741d5a3.png"
+  }
+}
